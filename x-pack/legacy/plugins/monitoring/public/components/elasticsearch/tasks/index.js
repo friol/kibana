@@ -4,7 +4,4 @@
  * you may not use this file except in compliance with the Elastic License.
  */
 
-export { ElasticsearchOverview } from './overview';
-export { ElasticsearchNodes } from './nodes';
-export { ElasticsearchIndices } from './indices';
 export { ElasticsearchTasks } from './tasks';

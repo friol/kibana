@@ -47,6 +47,16 @@
         i18n-id="xpack.monitoring.esNavigation.indicesLinkText"
         i18n-default-message="Indices"
       ></a>
+
+      <a
+      ng-if="!monitoringMain.instance && !monitoringMain.isDisabledTab('elasticsearch')"
+      kbn-href="#/elasticsearch/tasks"
+      class="euiTab"
+      ng-class="{'euiTab-isSelected': monitoringMain.isActiveTab('tasks')}"
+      i18n-id="xpack.monitoring.esNavigation.tasksLinkText"
+      i18n-default-message="Tasks"
+    ></a>
+
       <a
         ng-if="!monitoringMain.instance && monitoringMain.isDisabledTab('elasticsearch')"
         kbn-href=""

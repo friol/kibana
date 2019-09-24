@@ -15,5 +15,6 @@ export { PageLoading } from './page_loading';
 export {
   ElasticsearchOverview,
   ElasticsearchNodes,
-  ElasticsearchIndices
+  ElasticsearchIndices,
+  ElasticsearchTasks
 } from './elasticsearch';

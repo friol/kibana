@@ -23,6 +23,7 @@ export {
 export {
   esIndexRoute,
   esIndicesRoute,
+  esTasksRoute,
   esNodeRoute,
   esNodesRoute,
   esOverviewRoute,
