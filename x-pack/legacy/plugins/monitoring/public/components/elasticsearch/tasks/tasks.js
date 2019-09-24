@@ -5,10 +5,7 @@
  */
 
 import React from 'react';
-import { capitalize } from 'lodash';
-import { LARGE_FLOAT, LARGE_BYTES, LARGE_ABBREVIATED } from '../../../../common/formatting';
 import { formatMetric } from '../../../lib/format_number';
-import { ElasticsearchStatusIcon } from '../status_icon';
 import { ClusterStatus } from '../cluster_status';
 import { EuiMonitoringTable } from '../../table';
 import {

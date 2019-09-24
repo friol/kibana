@@ -5,7 +5,6 @@
  */
 
 import { get } from 'lodash';
-import { checkParam } from '../../error_missing_required';
 import { ElasticsearchMetric } from '../../metrics';
 import { createQuery } from '../../create_query';
 import { calculateRate } from '../../calculate_rate';
@@ -85,7 +84,6 @@ export function getTasks(req, esIndexPattern, shardStats) {
 
   const clusterUuid = req.params.clusterUuid;
   const metricFields = ElasticsearchMetric.getMetricFields();
-  const config = req.server.config();
   const params = {
     index: esIndexPattern,
     // TODO: composite aggregation
